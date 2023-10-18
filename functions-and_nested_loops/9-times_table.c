@@ -9,13 +9,27 @@ void times_table(void)
 			for (k = 0; k < 10; k++)
 			{
 				result = i * k;
-				printf("%d", result);
-				printf(",");
-				printf(" ");
-			
+				
+				if (k == 0)
+				{
+					printf("%d", result);
+				}
+
+				else
+				{
+					printf("%2d", result);
+				}
+
+				if (k != 9)
+				{
+					printf(", ");
+				}
+
 			}
 
 			printf("\n");
+
 		}
 
+		printf("\n");
 }
